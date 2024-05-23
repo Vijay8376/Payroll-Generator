@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <ImageView
+        android:id="@+id/topBanner"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="#40E0D0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bannerGrey"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#A9a9a9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBanner" />
+
+    <ImageView
+        android:id="@+id/bannerMagenta"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#FF00FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bannerGrey" />
+
+    <ImageView
+        android:id="@+id/videoButtons"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/bottomBorder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/bottomBorder"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/bottomVideo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/bottomVideo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/addTitle"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="214dp"
+        android:text="ID"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/nameText"
+        app:layout_constraintEnd_toStartOf="@+id/editText"
+        app:layout_constraintHorizontal_bias="0.613"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/videoButtons"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="194dp"
+        android:layout_marginEnd="44dp"
+        android:text="FIND"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/nameEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/videoButtons"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="214dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/nameText"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/videoButtons"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="155dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginBottom="30dp"
+        android:text="Employee Name"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/basicpayText"
+        app:layout_constraintStart_toStartOf="@+id/videoButtons" />
+
+    <TextView
+        android:id="@+id/basicpayText"
+        android:layout_width="115dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginBottom="33dp"
+        android:text="Basic Pay"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/hraText"
+        app:layout_constraintStart_toStartOf="@+id/videoButtons" />
+
+    <TextView
+        android:id="@+id/hraText"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginBottom="30dp"
+        android:text="HRA"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/perquisitesText"
+        app:layout_constraintStart_toStartOf="@+id/videoButtons" />
+
+    <TextView
+        android:id="@+id/perquisitesText"
+        android:layout_width="115dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginBottom="35dp"
+        android:text="Perquisites"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/othersText"
+        app:layout_constraintStart_toStartOf="@+id/videoButtons" />
+
+    <TextView
+        android:id="@+id/othersText"
+        android:layout_width="165dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginBottom="22dp"
+        android:text="Other Allowances"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/exit"
+        app:layout_constraintStart_toStartOf="@+id/videoButtons" />
+
+
+    <EditText
+        android:id="@+id/nameEdit"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/basicpayEdit"
+        app:layout_constraintEnd_toEndOf="@+id/videoButtons" />
+
+    <EditText
+        android:id="@+id/basicpayEdit"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="23dp"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/hraEdit"
+        app:layout_constraintEnd_toEndOf="@+id/videoButtons" />
+
+    <EditText
+        android:id="@+id/hraEdit"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/perquisitesEdit"
+        app:layout_constraintEnd_toEndOf="@+id/videoButtons" />
+
+    <EditText
+        android:id="@+id/perquisitesEdit"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="25dp"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/othersEdit"
+        app:layout_constraintEnd_toEndOf="@+id/videoButtons" />
+
+    <EditText
+        android:id="@+id/othersEdit"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="12dp"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/again"
+        app:layout_constraintEnd_toEndOf="@+id/videoButtons" />
+
+    <Button
+        android:id="@+id/again"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="108dp"
+        android:text="EDIT"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/videoButtons"
+        app:layout_constraintEnd_toEndOf="@+id/videoButtons" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="108dp"
+        android:text="EXIT"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/videoButtons"
+        app:layout_constraintStart_toStartOf="@+id/videoButtons" />
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="200dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="PAYEase"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginEnd="216dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/topBanner"
+        app:layout_constraintEnd_toEndOf="@+id/topBanner"
+        app:layout_constraintStart_toStartOf="@+id/topBanner"
+        app:layout_constraintTop_toTopOf="@+id/topBanner" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
